@@ -141,6 +141,10 @@ body {
     color: #d8d3d2;
 }
 
+.footer .top {
+    text-align: right;
+}
+
 .footer a {
     
 }
