@@ -89,20 +89,20 @@ body {
     margin-bottom: 20px;
 }
 
-.social ul {
+ul.social {
     
 }
 
-.social ul li {
+ul.social li {
     display: inline;
     margin-right: 15px;
 }
 
-.social ul li a {
+ul.social li a {
     color: #d8d3d2;
 }
 
-.social ul li a:hover {
+ul.social li a:hover {
     color: #595959;
     text-decoration: none;
 }
