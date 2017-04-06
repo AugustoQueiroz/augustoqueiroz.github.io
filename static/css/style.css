@@ -1,0 +1,150 @@
+/*
+    Palette:
+        #5381ff
+        #000505
+        #34f6f2
+        #595959
+        #fdfffc
+
+    https://coolors.co/5e81ff-000505-34f6f2-fdfffc-d8d3d2
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');
+
+/* General Styling */
+
+* {
+    color: #000505;
+}
+
+a {
+    color: #5e81ff;
+}
+
+a:hover {
+    color: #5e81ff;
+}
+
+p {
+    font-size: 13pt;
+    text-align: justify;
+}
+
+body {
+    background-color: #fdfffc;
+}
+
+.main {
+    width: 60%;
+}
+
+.header {
+    margin-top: 50px;
+    
+    /* Get the Header and Nav to be on the baseline */
+    display: flex;
+    align-items: center;
+}
+
+.header h4 {
+    color: #5e81ff;
+    font-size: 18pt;
+}
+
+.header h4 a {
+    color: inherit;
+}
+
+.header ul.nav {
+    text-align: right;
+}
+
+.header ul li {
+    display: inline;
+    list-style: none;
+    color: #d8d3d2;
+    
+    margin-left: 5px;
+}
+
+.header ul li.active {
+    color: #595959;
+}
+
+.header ul li h5 {
+    display: inline;
+}
+
+.header ul li a {
+    color: inherit;
+}
+
+.header ul li a:hover {
+    color: #595959;
+    text-decoration: none;
+}
+
+.social {
+    margin-bottom: 20px;
+}
+
+.social ul {
+    
+}
+
+.social ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.social ul li a {
+    color: #d8d3d2;
+}
+
+.social ul li a:hover {
+    color: #595959;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 0px;
+}
+
+.content .post-title {
+    margin-bottom: 30px;
+}
+
+.content p { 
+    /*font-family: 'Lora', serif;*/
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content ul span.fa {
+    margin-right: 5px;
+    color: #d8d3d2;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer span {
+    color: #d8d3d2;
+}
+
+.footer p {
+    font-family: inherit;
+    font-size: 10pt;
+    color: #d8d3d2;
+}
+
+.footer a {
+    
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
