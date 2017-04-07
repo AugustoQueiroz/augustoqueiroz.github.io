@@ -12,7 +12,7 @@ title: Augusto Sales de Queiroz
 
 <h3>Education</h3>
 
-{% assign education = CV_items | where: "category", "education" | sort: "listing-priority" %}
+{% assign education = [ed for ed in CV_items.sort("listing-priority") if ed.category == "education"] %}
 {% for ed in education %}
 <u>{{ ed.title }}</u> {{ ed.complement }}
 {{ ed.content }}
