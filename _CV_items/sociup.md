@@ -1,9 +1,9 @@
 ---
 category: experience
 title: Front-End Developer with HTML/CSS
-complement:
+complement: 123
 duration: 2015
-listing-priority:
+listing-priority: 0
 ---
 
 SOCIUP
