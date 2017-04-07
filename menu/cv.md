@@ -34,6 +34,7 @@ title: Augusto Sales de Queiroz
     <li>French (Intermediate)</li>
 </ul>
 
+<br>
 <h3>Other</h3>
 During the 2013-2014 academic year, I went on Rotary's Youth Exchange to the United States of America, spending one year of High School in Burlington, IA. During that year I played JV Basketball, Varsity Tennis, and performed in the school's production of <i>The Lion, the Witch, and the Wardrobe</i>, playing the role of Maugrim, the Wolf. I started playing JV Baseball, but stopped in order to take a trip around the country before coming back to Brazil. I also worked as a helper for the IT department of the school, mostly helping students fix minor problems with their school tablets, the Kunos.<br>
 I play the guitar and the ukulele, and enjoy doing so particularly with friends.
