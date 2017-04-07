@@ -4,20 +4,20 @@ title: Augusto Sales de Queiroz
 ---
 
 <address>
-    Phone: +55 (81) 98187-7707
+    Phone: +55 (81) 98187-7707<br>
     email: <a href="mailto:asq@cin.ufpe.br">asq@cin.ufpe.br</a>
 </address>
 
 <h3>Education</h3>
 {% for ed in site.education | sort: "listing-priority" %}
-<u>{{ ed.title }}</u> {{ ed.complement }}
+<u>{{ ed.title }}</u> &mdash; {{ ed.complement }}
 {{ ed.content }}
 {% endfor %}
 <br>
 
 <h3>Experience</h3>
 {% for ex in site.experience | sort: "duration" %}
-<u>{{ ex.title }}</u> {{ ex.duration }}
+<u>{{ ex.title }}</u> &mdash; {{ ex.duration }}
 {{ ex.content }}
 {% endfor %}
 <br>
