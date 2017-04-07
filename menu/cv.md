@@ -3,12 +3,26 @@ layout: page
 title: Augusto Sales de Queiroz
 ---
 
-{% assign CV_items = site.CV_items %}
-
 <address>
     Phone: +55 (81) 98187-7707
     email: <a href="mailto:asq@cin.ufpe.br">asq@cin.ufpe.br</a>
 </address>
+
+<h3>Education</h3>
+{% assign education = site.education | sort: "listing-priority" %}
+{% for ed in education %}
+<u>{{ ed.title }}</u> {{ ed.complement }}
+{{ ed.content }}
+{% endfor %}
+<br>
+
+<h3>Experience</h3>
+{% assign experience = site.experience | sort: "duration" %}
+{% for ex in experience %}
+<u>{{ ex.title }}</u> {{ ex.duration }}
+{{ ex.content }}
+{% endfor %}
+<br>
 
 <h3>Skills</h3>
 

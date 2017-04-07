@@ -31,4 +31,5 @@ highlighter:         rouge
 permalink:           none
 gems:                [jekyll-paginate]
 collections:
-- CV_items
+- education
+- experience
