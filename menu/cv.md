@@ -12,7 +12,7 @@ title: Augusto Sales de Queiroz
 
 <h3>Education</h3>
 
-{% trans CV_items | where: "category", "education" | sort: "listing-priority" as education %}
+{% assign education = CV_items | where: "category", "education" | sort: "listing-priority" %}
 {% for ed in education %}
 <u>{{ ed.title }}</u> {{ ed.complement }}
 {{ ed.content }}
@@ -21,7 +21,7 @@ title: Augusto Sales de Queiroz
 
 <h3>Experience</h3>
 
-{% trans CV_items | where: "category", "experience" | sort: "duration" as experience %}
+{% assign experience = CV_items | where: "category", "experience" | sort: "duration" %}
 {% for ex in experience %}
 <u>{{ ex.title }}</u> {{ ex.duration }}
 {{ ex.content }}
