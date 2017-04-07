@@ -12,7 +12,29 @@ title: Augusto Sales de Queiroz
 
 {% assign education = site.CV_items | where: "category", "education" | sort: "listing-priority" %}
 {% for item in education %}
-<u>{{ item.title }}</u> {{ item.complement }}<br>
+<u>{{ item.title }}</u> {{ item.complement }}
 {{ item.content }}
 {% endfor %}
 <br>
+
+<h3>Experience</h3>
+
+{% assign experience = site.CV_items | where: "category", "experience" | sort: "duration" %}
+{% for item in experience %}
+<u>{{ item.title }}</u> {{ item.duration }}
+{{ item.content }}
+{% endfor %}
+<br>
+
+<h3>Skills</h3>
+
+<ul>
+    <li>C/C++</li>
+    <li>Python</li>
+    <li>HTML5</li>
+    <li>English (Fluent)</li>
+    <li>Portuguese</li>
+    <li>French (Intermediate)</li>
+</ul>
+
+<h3>Other</h3>
