@@ -9,16 +9,14 @@ title: Augusto Sales de Queiroz
 </address>
 
 <h3>Education</h3>
-{% assign education = site.education | sort: "listing-priority" %}
-{% for ed in education %}
+{% for ed in site.education | sort: "listing-priority" %}
 <u>{{ ed.title }}</u> {{ ed.complement }}
 {{ ed.content }}
 {% endfor %}
 <br>
 
 <h3>Experience</h3>
-{% assign experience = site.experience | sort: "duration" %}
-{% for ex in experience %}
+{% for ex in site.experience | sort: "duration" %}
 <u>{{ ex.title }}</u> {{ ex.duration }}
 {{ ex.content }}
 {% endfor %}
