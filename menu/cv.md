@@ -20,7 +20,7 @@ title: Augusto Sales de Queiroz
 <h3>Experience</h3>
 
 {% assign experience = site.CV_items | where: "category", "experience" | sort: "duration" %}
-{% for ex in education %}
+{% for ex in experience %}
 <u>{{ ex.title }}</u> {{ ex.duration }}
 {{ ex.content }}
 {% endfor %}
