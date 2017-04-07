@@ -11,14 +11,20 @@ title: Augusto Sales de Queiroz
 <h3>Education</h3>
 
 {% assign education = site.CV_items | where: "category", "education" | sort: "listing-priority" %}
-{% for item in education %}
-<u>{{ item.title }}</u> {{ item.complement }}
-{{ item.content }}
+{% for ed in education %}
+<u>{{ ed.title }}</u> {{ ed.complement }}
+{{ ed.content }}
 {% endfor %}
 <br>
 
 <h3>Experience</h3>
 
+{% assign experience = site.CV_items | where: "category", "experience" | sort: "duration" %}
+{% for ex in education %}
+<u>{{ ex.title }}</u> {{ ex.duration }}
+{{ ex.content }}
+{% endfor %}
+<br>
 
 <h3>Skills</h3>
 
