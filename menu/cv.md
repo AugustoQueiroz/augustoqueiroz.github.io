@@ -12,14 +12,14 @@ title: Augusto Sales de Queiroz
 <h3>Education</h3>
 {% for ed in site.education | sort: "listing-priority" %}
 <u>{{ ed.title }}</u> &mdash; {{ ed.complement }}
-{{ ed.content }}
+{{ ed.content }}<br>
 {% endfor %}
 <br>
 
 <h3>Experience</h3>
 {% for ex in site.experience | sort: "duration" %}
 <u>{{ ex.title }}</u> &mdash; {{ ex.duration }}
-{{ ex.content }}
+{{ ex.content }}<br>
 {% endfor %}
 <br>
 
