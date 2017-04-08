@@ -18,6 +18,8 @@ author:
 navigation:
 - title: (blog&nbsp;archive)
   url: /blog
+- title: (projects)
+  url: /projects
 - title: (CV)
   url: /cv
 - title: (about&nbsp;me)
@@ -34,3 +36,5 @@ gems:                [jekyll-paginate]
 collections:
 - education
 - experience
+- projects
+- game_ideas
