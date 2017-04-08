@@ -3,7 +3,7 @@ layout: page
 title: Blog Archive
 ---
 <ul class="posts">
-{% if site.posts %}
+{% if site.posts > 0 %}
   {% for post in site.posts %}
 
     {% unless post.next %}
