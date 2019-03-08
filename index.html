@@ -1,45 +1,49 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta stuff -->
+        <meta charset="UTF-8">
+        <meta name="description" content="I'm a computer engineering student, and this is my webpage :)">
+        <meta name="keywords" content="Computer Engineering, Swift, Raspberry Pi, Arduino, HTML">
+        <meta name="author" content="Augusto Sales de Queiroz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- What appears on the browser tab -->
+        <title>Augusto Queiroz</title>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicon.png" />
 
-{% if paginator.posts %}
-  {% for post in paginator.posts %}
-  <div class="posts">
-    <h1>
-      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-    </h1>
-    {% if post.image.teaser %}
-      <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/images/{{ post.image.teaser }}"></a>
-    {% endif %}
-    <p>
-      {{ post.content | strip_html | truncate: 350 }} <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
-      <span class="post-date" style="margin-top:3px"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>
-    </p>
-  </div>
-  {% endfor %}
+        <!-- Imports -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="resources/css/styles.css" />
+    </head>
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.next_page_path }}" class="next">Older</a>
-  {% else %}
-    <span class="pagination-button">Older</span>
-  {% endif %}
+    <body>
+        <!-- Background stuff -->
+        <img id="background-A" class="background-logo" src="resources/images/A.svg" />
+        <img id="background-Q" class="background-logo" src="resources/images/Q.svg" />
 
-  {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Newer</a>
-    {% else %}
-      <span class="pagination-button">Newer</span>
-  {% endif %}
-{% else %}
-  <div style="text-align: center">    
-    <h1>Hey there! Thanks for checking in. There are no posts yet, but look at this cute dog.</h1>
-    
-    <img src="{{site.github.link}}/images/dog.png" />
-    
-    <p>Also, you can go ahead and check out my <a href="{{site.github.url}}/menu/cv">CV</a> if you're interested. Or if you just want to know more about me, the <a href="{{site.github.url}}/menu/about">about me</a> section is also ready.</p>
-  </div>
-{% endif %}
+        <!-- Pages -->
+        <div id="home" class="page">
+            <div id="home-container">
+                <h1>Hi.</h1>
 
-</div>
+                <div class="text-container">
+                    <p>My name is <b>Augusto</b>, but considering you're here, you probably already knew that.</p>
+
+                    <p>I'm a <b>computer engineering student</b> who is passionate about using technology to leave a positive mark in people's lives.</p>
+
+                    <p>You can check out the links below, or scroll down to learn more abou me :)</p>
+                </div>
+
+                <p class="link-container">
+                    <a href="#"> <i class="fab fa-github"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-medium-m"></i></a>
+                </p>
+            </div>
+        </div>
+
+    </body>
+</html>
