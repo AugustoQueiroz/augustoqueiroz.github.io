@@ -24,7 +24,7 @@ body {
     padding: 0;
     top: 0px;
 
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 h1 {
@@ -36,8 +36,13 @@ p {
     font-size: 1.2em;
 }
 
+a {
+    color: inherit;
+    font-weight: bold;
+}
+
 .background-logo {
-    position: absolute;
+    position: fixed;
     z-index: -1;
 
     height: 100vh;
@@ -53,14 +58,52 @@ p {
 
 .page {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 
     margin: 0;
 }
 
+.page-container {
+    padding: 8vh 15vw;
+    display: inline-block;
+}
+
+.heading {
+}
+
+.heading img {
+    margin: 0;
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 10vw;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.heading h2 {
+    display: inline-block;
+
+    font-size: 4em;
+
+    vertical-align: middle;
+}
+
+.content {
+    width: 55vw;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
 #home-container {
     width: 536px;
-    height: 80vh;
 
     margin: auto;
     padding: 10vh 0;
@@ -88,6 +131,164 @@ h1 {
     margin: 0;
 }
 
+#side-links {
+    display: hidden;
+    
+    width: 100px;
+    text-align: right;
+
+    position: fixed;
+    right: -10vw;
+    bottom: 40px;
+
+    transition: right 0.5s ease-in-out;
+}
+
+.side-links .link-container {
+    text-align: right;
+}
+
+.side-logo {
+    width: 80px;
+    margin-top: 2em;
+}
+
+.techs {
+    padding: 0;
+    
+    margin-bottom: 3em;
+
+    line-height: 3;
+}
+
+.techs a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.techs a:hover li {
+    background-color: var(--green);
+    color: var(--light);
+}
+
+.techs li {
+    display: inline;
+    list-style-type: none;
+
+    border: 3px solid var(--green);
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-right: 5px;
+}
+
+#projects .content {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#projects .content::-webkit-scrollbar { width: 0 !important }
+#projects .content { overflow: -moz-scrollbars-none; }
+#projects .content { -ms-overflow-style: none; }
+
+.project {
+    display: inline-block;
+    min-width: 300px;
+    width: 40%;
+    height: 40vh; 
+    padding: 10px;
+    margin-right: 4%;
+    margin-bottom: 4%;
+
+    background-color: var(--light);
+    border-radius: 10px;
+
+    color: var(--dark);
+}
+
+.project img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.project h4 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.project span {
+}
+
+.project .techs {
+    line-height: 2.5;
+    margin: 0;
+}
+
+.project .techs li {
+    font-size: small;
+    padding: 5px;
+}
+
+.project.last {
+    margin-right: 0;
+}
+
+.personal {
+    background-color: var(--light);
+
+}
+
+.inverted {
+}
+
+.personal.inverted {
+    background-color: var(--yellow);
+
+    color: var(--dark);
+}
+
+.personal.inverted h2 {
+    color: var(--dark);
+}
+
+.cs {
+    background-color: var(--light);
+
+}
+
+.cs h2 {
+    color: var(--green);
+}
+
+.cs.inverted {
+    background-color: var(--green);
+    //background-image: url("../images/background-pattern.png");
+    //background-size: 100px auto;
+    //background-repeat: repeat;
+
+    color: var(--light);
+}
+
+.cs.inverted h2 {
+    color: var(--light);
+}
+
 @media only screen and (max-aspect-ratio: 98/100) {
     // Do something so the A and Q maintain the correct distance to each other
+}
+
+@media only screen and (max-width: 620px) {
+    .page-container .heading img {
+        display: none;
+    }
+
+    .page-container .heading h2 {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-height: 695px) {
+    .project span {
+        display: none;
+    }
 }
