@@ -56,6 +56,15 @@ a {
     right: calc(-1*97vh*0.48);
 }
 
+.small-logo-container {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.small-logo {
+	display: None;
+}
+
 .page {
     width: 100vw;
     min-height: 100vh;
@@ -273,11 +282,40 @@ h1 {
     color: var(--light);
 }
 
-@media only screen and (max-aspect-ratio: 98/100) {
-    // Do something so the A and Q maintain the correct distance to each other
+@media screen and (max-aspect-ratio: 98/100) {
+    /* Do something so the A and Q maintain the correct distance to each other */
+	.background-logo {
+		display: none;
+	}
+
+	.small-logo {
+		display: inline-block;
+		height: 15vh;
+	}
+
+	#home-container {
+		width: 80%;
+	}
+
+	.content {
+		width: 100%;
+		text-align: justify;
+	}
+
+	#work-with .content {
+		text-align: left;
+	}
+
+	.heading h2 {
+		font-size: 3em;
+	}
+
+	#side-links {
+		display: none;
+	}
 }
 
-@media only screen and (max-width: 620px) {
+@media screen and (max-width: 620px) {
     .page-container .heading img {
         display: none;
     }
@@ -287,7 +325,7 @@ h1 {
     }
 }
 
-@media only screen and (max-height: 695px) {
+@media screen and (max-height: 695px) {
     .project span {
         display: none;
     }
