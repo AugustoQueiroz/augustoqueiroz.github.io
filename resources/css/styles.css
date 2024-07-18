@@ -1,8 +1,9 @@
 @import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html { font-family: 'Noto Sans', sans-serif; }
+/*@supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
-}
+}*/
 
 :root {
     --light: #F6F8FF;
@@ -53,7 +54,8 @@ a {
 }
 
 #background-Q {
-    right: calc(-1*97vh*0.48);
+    right: calc(-1*97vh*0.38);
+    height: 107vh;
 }
 
 .small-logo-container {
@@ -95,6 +97,7 @@ a {
     display: inline-block;
 
     font-size: 4em;
+    font-family: "Alata", sans-serif;
 
     vertical-align: middle;
 }
@@ -138,6 +141,7 @@ a {
 
 h1 {
     margin: 0;
+    font-family: "Alata", sans-serif;
 }
 
 #side-links {
