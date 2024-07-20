@@ -144,6 +144,19 @@ h1 {
     font-family: "Alata", sans-serif;
 }
 
+h3 a {
+    vertical-align: middle;
+}
+
+h3 i.fa-brands {
+    font-size: 3em;
+    vertical-align: middle;
+}
+
+h3 img {
+    vertical-align: middle;
+}
+
 #side-links {
     display: hidden;
     
